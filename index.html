@@ -3,34 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>GBH — Investissement, conseil et édition d'applications · Paris</title>
-<meta name="description" content="GBH est une société par actions simplifiée basée à Paris. Elle investit dans des entreprises, accompagne des dirigeants et édite NOE, l'application pour apprendre les langues en parlant.">
-<link rel="canonical" href="https://gab728.github.io/gbh-site/">
+<title>NOE — Apprends une langue en parlant</title>
+<meta name="description" content="NOE : des leçons courtes, corrigées tout de suite, et de vraies conversations à voix haute. Italien, espagnol, anglais, français et hébreu. Application éditée par GBH.">
+<link rel="canonical" href="https://gab728.github.io/noe-site/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="GBH — Investissement, conseil et édition d'applications · Paris">
-<meta property="og:description" content="GBH est une société par actions simplifiée basée à Paris. Elle investit dans des entreprises, accompagne des dirigeants et édite NOE, l'application pour apprendre les langues en parlant.">
-<meta property="og:url" content="https://gab728.github.io/gbh-site/">
-<meta property="og:image" content="https://gab728.github.io/gbh-site/assets/noe-256.png">
-<meta name="theme-color" content="#F6F4EF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0F1115" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:site_name" content="NOE">
+<meta property="og:title" content="NOE — Apprends une langue en parlant">
+<meta property="og:description" content="NOE : des leçons courtes, corrigées tout de suite, et de vraies conversations à voix haute. Italien, espagnol, anglais, français et hébreu. Application éditée par GBH.">
+<meta property="og:url" content="https://gab728.github.io/noe-site/">
+<meta property="og:image" content="https://gab728.github.io/noe-site/assets/noe-256.png">
+<meta name="theme-color" content="#F4F6FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1016" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/noe-64.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/noe-180.png">
 <link rel="preload" href="fonts/nunito-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"GBH","legalName":"GBH","url":"https://gab728.github.io/gbh-site/","email":"bramigab@gmail.com","address":{"@type":"PostalAddress","streetAddress":"23 rue d'Anjou","postalCode":"75008","addressLocality":"Paris","addressCountry":"FR"},"vatID":"FR18934041229","foundingDate":"2024-10-07","identifier":[{"@type":"PropertyValue","propertyID":"SIREN","value":"934041229"}],"founder":{"@type":"Person","name":"Gabriel Brami"},"owns":{"@type":"MobileApplication","name":"NOE","applicationCategory":"EducationalApplication","operatingSystem":"iOS, Android, Web","url":"https://gab728.github.io/italiano-passo-passo/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"NOE","url":"https://gab728.github.io/noe-site/","applicationCategory":"EducationalApplication","operatingSystem":"iOS, Android, Web","inLanguage":["fr","en","es"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"GBH","legalName":"GBH","email":"bramigab@gmail.com","vatID":"FR18934041229","address":{"@type":"PostalAddress","streetAddress":"23 rue d'Anjou","postalCode":"75008","addressLocality":"Paris","addressCountry":"FR"}}}</script>
 <script>
-/* Langue : français par défaut, anglais pour les visiteurs dont le navigateur n'est pas en français. Même adresse pour les deux. */
-(function () { var l = "fr"; try { l = localStorage.getItem("gbh-lang") || ""; } catch (e) {} if (!l) l = /^fr/i.test(navigator.language || "fr") ? "fr" : "en"; document.documentElement.lang = l; })();
+(function () { var l = ""; try { l = localStorage.getItem("noe-lang") || ""; } catch (e) {} if (!l) l = /^fr/i.test(navigator.language || "fr") ? "fr" : "en"; document.documentElement.lang = l; })();
 </script>
 </head>
 <body>
 <a class="skip" href="#main"><span data-l="fr">Aller au contenu</span><span data-l="en">Skip to content</span></a>
 <header class="top" id="top">
   <div class="wrap">
-    <a class="logo" href="./" aria-label="GBH"><span class="logo-mark" aria-hidden="true">GBH</span>GBH</a>
+    <a class="logo" href="./" aria-label="NOE"><img src="assets/noe-64.png" width="34" height="34" alt="">NOE</a>
     <nav class="nav" aria-label="Navigation">
-      <a class="opt" href="./#activites"><span data-l="fr">Activités</span><span data-l="en">What we do</span></a>
-      <a class="opt" href="./#noe">NOE</a>
+      <a class="opt" href="./#fonctionnalites"><span data-l="fr">L'app</span><span data-l="en">The app</span></a>
+      <a class="opt" href="./#formules"><span data-l="fr">Formules</span><span data-l="en">Plans</span></a>
+      <a class="opt" href="https://gab728.github.io/italiano-passo-passo/aide.html"><span data-l="fr">Aide</span><span data-l="en">Help</span></a>
       <a href="./#contact">Contact</a>
       <button class="lang" type="button" id="lang" aria-label="Changer de langue / Change language"><span data-l="fr">EN</span><span data-l="en">FR</span></button>
     </nav>
@@ -39,102 +40,138 @@
 <main id="main">
 
 <section class="hero" aria-labelledby="h1">
+  <div class="sky" aria-hidden="true"><i class="cloud c1"></i><i class="cloud c2"></i><i class="cloud c3"></i></div>
   <div class="wrap">
-    <div>
-      <div class="eyebrow"><span data-l="fr">Société française · Paris</span><span data-l="en">French company · Paris</span></div>
-      <h1 id="h1"><span data-l="fr">Investir, conseiller, <span class="hl">créer des applications</span>.</span><span data-l="en">Investing, advising, <span class="hl">building apps</span>.</span></h1>
-      <p class="lead"><span data-l="fr">GBH est une société par actions simplifiée basée à Paris. Elle prend des participations dans des entreprises, accompagne des dirigeants sur leurs sujets financiers et stratégiques, et conçoit ses propres produits numériques, dont <b>NOE</b>, l'application pour apprendre les langues en parlant.</span><span data-l="en">GBH is a French simplified joint-stock company based in Paris. It invests in companies, advises business leaders on financial and strategic matters, and builds its own digital products, including <b>NOE</b>, the app for learning languages by speaking.</span></p>
+    <div class="hero-text">
+      <div class="badge"><span data-l="fr">Bientôt sur l'App Store et Google Play</span><span data-l="en">Coming soon to the App Store and Google Play</span></div>
+      <h1 id="h1"><span data-l="fr">Apprends une langue <span class="hl">en parlant</span>.</span><span data-l="en">Learn a language <span class="hl">by speaking</span>.</span></h1>
+      <p class="lead"><span data-l="fr">Des leçons courtes, corrigées tout de suite, et de vraies conversations à voix haute avec des personnages. Lino t'accompagne à chaque étape.</span><span data-l="en">Short lessons, corrected instantly, and real spoken conversations with characters. Lino is with you every step of the way.</span></p>
       <div class="cta">
-        <a class="btn primary" href="#noe"><span data-l="fr">Découvrir NOE</span><span data-l="en">Discover NOE</span></a>
-        <a class="btn" href="#contact"><span data-l="fr">Nous contacter</span><span data-l="en">Contact us</span></a>
+        <a class="btn primary" href="https://gab728.github.io/italiano-passo-passo/"><span data-l="fr">Essayer gratuitement</span><span data-l="en">Try it for free</span></a>
+        <a class="btn" href="#fonctionnalites"><span data-l="fr">Découvrir l'app</span><span data-l="en">Discover the app</span></a>
       </div>
+      <p class="small muted"><span data-l="fr">Gratuit chaque jour, sans carte bancaire. Sur le web dès maintenant.</span><span data-l="en">Free every day, no credit card. Available on the web now.</span></p>
     </div>
-    <aside class="hero-card" aria-label="Identité de la société">
-      <div class="eyebrow"><span data-l="fr">Identité de la société</span><span data-l="en">Company details</span></div>
-      <dl class="facts" data-l="fr">
-  <div><dt>Dénomination</dt><dd>GBH</dd></div>
-  <div><dt>Forme</dt><dd>Société par actions simplifiée (SAS)</dd></div>
-  <div><dt>Capital social</dt><dd>1 000 €</dd></div>
-  <div><dt>Siège social</dt><dd>23 rue d'Anjou, 75008 Paris, France</dd></div>
-  <div><dt>Immatriculation</dt><dd>934 041 229 R.C.S. Paris</dd></div>
-  <div><dt>SIRET</dt><dd>934 041 229 00014</dd></div>
-  <div><dt>N° de TVA</dt><dd>FR18934041229</dd></div>
-  <div><dt>Président</dt><dd>Gabriel Brami</dd></div></dl>
-      <dl class="facts" data-l="en">
-  <div><dt>Legal name</dt><dd>GBH</dd></div>
-  <div><dt>Legal form</dt><dd>Simplified joint-stock company (SAS)</dd></div>
-  <div><dt>Share capital</dt><dd>€1,000</dd></div>
-  <div><dt>Registered office</dt><dd>23 rue d'Anjou, 75008 Paris, France</dd></div>
-  <div><dt>Registration</dt><dd>934 041 229 R.C.S. Paris</dd></div>
-  <div><dt>SIRET</dt><dd>934 041 229 00014</dd></div>
-  <div><dt>VAT number</dt><dd>FR18934041229</dd></div>
-  <div><dt>President</dt><dd>Gabriel Brami</dd></div></dl>
-    </aside>
+    <div class="hero-art">
+      <div class="plane"><svg class="lp-svg" role="img" viewBox="0 0 220 124" aria-label="Lino, la mascotte de NOE, dans son avion" focusable="false">
+  <!-- Écharpe de Lino, qui flotte au vent -->
+  <path class="lp-scarf" d="M104 51 C92 46 80 54 64 46 C70 56 82 60 96 58 L104 57 Z" fill="#FF6B57"/>
+  <path class="lp-scarf2" d="M100 55 C90 58 80 64 70 62 C78 68 90 66 100 60 Z" fill="#E2557A"/>
+  <!-- Aile du fond -->
+  <path d="M104 62 L136 62 L124 44 C122 42 118 42 116 44 Z" fill="#2A44D6"/>
+  <!-- Lino, le citron pilote -->
+  <g class="lp-pilot">
+    <path d="M114 22 C116 12 125 7 134 9 C130 18 123 22 114 22 Z" fill="#3DBE8B"/>
+    <path class="lp-arm" d="M128 50 C136 44 140 36 138 28" stroke="#F2B90F" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <circle class="lp-arm" cx="138" cy="27" r="4" fill="#FFD84A"/>
+    <path d="M93 42 C93 28 103 21 114 21 C125 21 135 28 135 42 C135 56 125 63 114 63 C103 63 93 56 93 42 Z" fill="#FFD84A"/>
+    <ellipse cx="104" cy="31" rx="6" ry="3.4" fill="#FFE98C" transform="rotate(-20 104 31)"/>
+    <path d="M94 33 C102 29 126 29 134 33" stroke="#7A4B2A" stroke-width="3" fill="none"/>
+    <circle cx="107" cy="31" r="5.2" fill="#BFE3FF" stroke="#7A4B2A" stroke-width="2.4"/>
+    <circle cx="121" cy="31" r="5.2" fill="#BFE3FF" stroke="#7A4B2A" stroke-width="2.4"/>
+    <ellipse class="lp-blink" cx="108" cy="42" rx="2.6" ry="3.3" fill="#1E1B2E"/>
+    <ellipse class="lp-blink" cx="121" cy="42" rx="2.6" ry="3.3" fill="#1E1B2E"/>
+    <circle cx="102" cy="48" r="3.2" fill="#FFA98A" opacity=".8"/>
+    <circle cx="127" cy="48" r="3.2" fill="#FFA98A" opacity=".8"/>
+    <path d="M109 48 Q114.5 55 120 48 Z" fill="#1E1B2E"/>
+  </g>
+  <!-- Queue -->
+  <path d="M40 62 L26 26 C25 22 30 20 33 23 L64 54 Z" fill="#3B5BFF"/>
+  <circle cx="36" cy="38" r="5" fill="#FFD84A"/>
+  <path d="M24 66 L54 63 L58 70 L28 73 Z" fill="#2A44D6"/>
+  <!-- Fuselage -->
+  <path d="M30 63 C40 52 70 50 108 51 C140 52 164 53 178 60 C185 64 184 72 175 75 C150 83 90 85 52 78 C38 75 30 71 30 63 Z" fill="#3B5BFF"/>
+  <path d="M46 66 C82 61 140 61 176 65" stroke="#fff" stroke-opacity=".45" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="68" cy="66" r="4.6" fill="#CFE8FF" stroke="#fff" stroke-width="1.6"/>
+  <circle cx="84" cy="65.5" r="4.6" fill="#CFE8FF" stroke="#fff" stroke-width="1.6"/>
+  <path d="M134 52 L142 38 C143 37 145 37 145 39 L146 54 Z" fill="#CFE8FF" opacity=".85"/>
+  <!-- Aile de devant et roues -->
+  <path d="M112 77 L108 94" stroke="#1E1B2E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M148 75 L150 94" stroke="#1E1B2E" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="108" cy="98" r="6" fill="#1E1B2E"/><circle cx="108" cy="98" r="2.2" fill="#fff"/>
+  <circle cx="150" cy="98" r="6" fill="#1E1B2E"/><circle cx="150" cy="98" r="2.2" fill="#fff"/>
+  <path d="M90 68 L146 68 C149 68 150 71 148 73 L134 86 C132 88 130 88 128 88 L100 88 C97 88 96 86 97 84 Z" fill="#5B76FF"/>
+  <!-- Nez et hélice -->
+  <path d="M175 58 C183 60 188 64 188 67 C188 70 183 74 175 75 Z" fill="#FFD84A"/>
+  <circle cx="189" cy="66.5" r="3" fill="#1E1B2E"/>
+  <ellipse class="lp-prop" cx="191" cy="66.5" rx="3" ry="24" fill="#1E1B2E" opacity=".6"/>
+  <ellipse cx="191" cy="66.5" rx="2" ry="24" fill="#9AA6FF" opacity=".22"/>
+</svg></div>
+      <div class="phone"><picture><source srcset="assets/noe-5.webp" type="image/webp"><img src="assets/noe-5.jpg" width="520" height="1130" decoding="async" alt="NOE : italien, espagnol, anglais, français et hébreu / Italian, Spanish, English, French and Hebrew" fetchpriority="high"></picture></div>
+    </div>
   </div>
 </section>
 
-<section id="activites" aria-labelledby="h-act">
+<section class="langs" aria-label="Langues">
+  <div class="wrap">
+    <p class="eyebrow"><span data-l="fr">Cinq langues à apprendre</span><span data-l="en">Five languages to learn</span></p>
+    <ul><li><span aria-hidden="true">🇮🇹</span><span data-l="fr">Italien</span><span data-l="en">Italian</span></li><li><span aria-hidden="true">🇪🇸</span><span data-l="fr">Espagnol</span><span data-l="en">Spanish</span></li><li><span aria-hidden="true">🇬🇧</span><span data-l="fr">Anglais</span><span data-l="en">English</span></li><li><span aria-hidden="true">🇫🇷</span><span data-l="fr">Français</span><span data-l="en">French</span></li><li><span aria-hidden="true">🇮🇱</span><span data-l="fr">Hébreu</span><span data-l="en">Hebrew</span></li></ul>
+    <p class="muted small"><span data-l="fr">L'application parle français, anglais et espagnol.</span><span data-l="en">The app is available in French, English and Spanish.</span></p>
+  </div>
+</section>
+
+<section id="fonctionnalites" aria-labelledby="h-feat">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow"><span data-l="fr">Activités</span><span data-l="en">What we do</span></div>
-      <h2 id="h-act"><span data-l="fr">Trois métiers, une même exigence</span><span data-l="en">Three activities, one standard</span></h2>
+      <p class="eyebrow"><span data-l="fr">L'app</span><span data-l="en">The app</span></p>
+      <h2 id="h-feat"><span data-l="fr">Dix minutes par jour, et ça rentre</span><span data-l="en">Ten minutes a day, and it sticks</span></h2>
     </div>
-    <div class="grid3">
-      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3><span data-l="fr">Participations</span><span data-l="en">Investments</span></h3>
-        <p><span data-l="fr">Prise, détention et gestion de participations, majoritaires ou minoritaires, dans des sociétés en France et à l'étranger, avec un horizon de long terme.</span><span data-l="en">Acquiring, holding and managing majority or minority stakes in companies in France and abroad, with a long-term view.</span></p></article>
-      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a7 7 0 0 0-4 12.7V18h8v-2.3A7 7 0 0 0 12 3z"/><path d="M9.5 21h5"/></svg></div><h3><span data-l="fr">Conseil</span><span data-l="en">Advisory</span></h3>
-        <p><span data-l="fr">Accompagnement des dirigeants sur leurs questions financières et stratégiques : pilotage, financement, organisation, projets de croissance.</span><span data-l="en">Supporting business leaders on financial and strategic matters: performance management, financing, organisation and growth projects.</span></p></article>
-      <article class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg></div><h3><span data-l="fr">Édition d'applications</span><span data-l="en">App publishing</span></h3>
-        <p><span data-l="fr">Conception, développement et publication d'applications mobiles et web. Notre première application, NOE, aide à apprendre une langue en parlant.</span><span data-l="en">Designing, building and publishing mobile and web apps. Our first app, NOE, helps people learn a language by speaking it.</span></p></article>
+    <div class="features">
+      <article class="feature">
+        <div class="feature-shot"><picture><source srcset="assets/noe-2.webp" type="image/webp"><img src="assets/noe-2.jpg" width="520" height="1130" decoding="async" alt="NOE : Des leçons courtes, corrigées tout de suite / Short lessons, corrected instantly" loading="lazy"></picture></div>
+        <div class="feature-text"><h3><span data-l="fr">Des leçons courtes, corrigées tout de suite</span><span data-l="en">Short lessons, corrected instantly</span></h3><p><span data-l="fr">Chaque jour, une leçon de quelques minutes : vocabulaire dit par Lino, explications claires et exercices corrigés à la seconde.</span><span data-l="en">Every day, a lesson of a few minutes: vocabulary spoken by Lino, clear explanations and exercises corrected in a second.</span></p></div>
+      </article>
+      <article class="feature rev">
+        <div class="feature-shot"><picture><source srcset="assets/noe-1.webp" type="image/webp"><img src="assets/noe-1.jpg" width="520" height="1130" decoding="async" alt="NOE : Parler avec des personnages, à voix haute / Talk out loud with characters" loading="lazy"></picture></div>
+        <div class="feature-text"><h3><span data-l="fr">Parler avec des personnages, à voix haute</span><span data-l="en">Talk out loud with characters</span></h3><p><span data-l="fr">Commander un café à Rome, réserver une chambre à Madrid : de vraies conversations, avec une voix naturelle et des corrections bienveillantes.</span><span data-l="en">Order a coffee in Rome, book a room in Madrid: real conversations, with a natural voice and kind corrections.</span></p></div>
+      </article>
+      <article class="feature">
+        <div class="feature-shot"><picture><source srcset="assets/noe-3.webp" type="image/webp"><img src="assets/noe-3.jpg" width="520" height="1130" decoding="async" alt="NOE : Un billet par jour, à ton rythme / One ticket a day, at your own pace" loading="lazy"></picture></div>
+        <div class="feature-text"><h3><span data-l="fr">Un billet par jour, à ton rythme</span><span data-l="en">One ticket a day, at your own pace</span></h3><p><span data-l="fr">Un parcours progressif, de débutant à avancé, et l'actualité réécrite à ton niveau pour lire et écrire sur des sujets qui t'intéressent.</span><span data-l="en">A step-by-step path from beginner to advanced, plus the news rewritten at your level to read and write about topics you like.</span></p></div>
+      </article>
+      <article class="feature rev">
+        <div class="feature-shot"><picture><source srcset="assets/noe-4.webp" type="image/webp"><img src="assets/noe-4.jpg" width="520" height="1130" decoding="async" alt="NOE : Garde ta série, jour après jour / Keep your streak, day after day" loading="lazy"></picture></div>
+        <div class="feature-text"><h3><span data-l="fr">Garde ta série, jour après jour</span><span data-l="en">Keep your streak, day after day</span></h3><p><span data-l="fr">Objectif du jour, série, rappels sympas et un carnet de mots toujours sous la main : l'habitude s'installe sans effort.</span><span data-l="en">Daily goal, streak, friendly reminders and a word notebook always at hand: the habit builds itself.</span></p></div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="noe" id="noe" aria-labelledby="h-noe">
+<section class="plans-wrap" id="formules" aria-labelledby="h-plans">
   <div class="wrap">
-    <div class="noe-head">
-      <img src="assets/noe-256.png" width="96" height="96" alt="Icône de l'application NOE">
-      <div>
-        <div class="eyebrow"><span data-l="fr">Notre application</span><span data-l="en">Our app</span></div>
-        <h2 id="h-noe"><span data-l="fr">NOE — apprendre une langue en parlant</span><span data-l="en">NOE — learn a language by speaking</span></h2>
-      </div>
+    <div class="section-head">
+      <p class="eyebrow"><span data-l="fr">Formules</span><span data-l="en">Plans</span></p>
+      <h2 id="h-plans"><span data-l="fr">Commence gratuitement, va plus loin quand tu veux</span><span data-l="en">Start for free, go further whenever you like</span></h2>
     </div>
-    <div class="noe-body">
-      <div>
-        <div class="badge"><span data-l="fr">Bientôt sur l'App Store et Google Play</span><span data-l="en">Coming soon to the App Store and Google Play</span></div>
-        <p><span data-l="fr">NOE propose chaque jour une leçon courte, des exercices corrigés tout de suite et de vraies conversations à voix haute avec des personnages. Lino, notre mascotte, accompagne l'élève à chaque étape.</span><span data-l="en">Every day, NOE offers a short lesson, instantly corrected exercises and real spoken conversations with characters. Lino, our mascot, is there at every step.</span></p>
-        <ul class="ticks">
-          <li><span data-l="fr">Cinq langues à apprendre : italien, espagnol, anglais, français et hébreu.</span><span data-l="en">Five languages to learn: Italian, Spanish, English, French and Hebrew.</span></li>
-          <li><span data-l="fr">Application disponible en français, en anglais et en espagnol.</span><span data-l="en">App available in French, English and Spanish.</span></li>
-          <li><span data-l="fr">Une formule gratuite chaque jour, sans carte bancaire ; des abonnements Premium et Expert pour aller plus loin.</span><span data-l="en">A free plan every day, no credit card needed; Premium and Expert subscriptions to go further.</span></li>
-          <li><span data-l="fr">Progression enregistrée dans le compte de l'élève, sur tous ses appareils.</span><span data-l="en">Progress saved to the learner's account, across all their devices.</span></li>
-        </ul>
-        <div class="links">
-          <a href="https://gab728.github.io/italiano-passo-passo/"><span data-l="fr">Essayer NOE sur le web</span><span data-l="en">Try NOE on the web</span></a>
-          <a href="https://gab728.github.io/italiano-passo-passo/aide.html"><span data-l="fr">Aide et assistance</span><span data-l="en">Help and support</span></a>
-          <a href="https://gab728.github.io/italiano-passo-passo/confidentialite.html"><span data-l="fr">Confidentialité de l'app</span><span data-l="en">App privacy policy</span></a>
-        </div>
-      </div>
-      <div class="shots" role="list" aria-label="Captures d'écran de NOE">
-        <picture role="listitem"><source srcset="assets/noe-1.webp" type="image/webp"><img src="assets/noe-1.jpg" width="520" height="1130" decoding="async" alt="NOE : Parler avec des personnages, à voix haute / Talking out loud with characters"></picture>
-        <picture role="listitem"><source srcset="assets/noe-2.webp" type="image/webp"><img src="assets/noe-2.jpg" width="520" height="1130" decoding="async" alt="NOE : Des leçons courtes, corrigées tout de suite / Short lessons, corrected instantly"></picture>
-        <picture role="listitem"><source srcset="assets/noe-3.webp" type="image/webp"><img src="assets/noe-3.jpg" width="520" height="1130" decoding="async" alt="NOE : Une leçon par jour, à son rythme / One lesson a day, at your own pace"></picture>
-        <picture role="listitem"><source srcset="assets/noe-4.webp" type="image/webp"><img src="assets/noe-4.jpg" width="520" height="1130" decoding="async" alt="NOE : Une série de jours d'affilée / A daily streak"></picture>
-      </div>
+    <div class="plans">
+      <article class="plan">
+        <h3><span data-l="fr">Gratuit</span><span data-l="en">Free</span></h3><p class="muted"><span data-l="fr">Chaque jour, sans carte bancaire</span><span data-l="en">Every day, no credit card</span></p>
+        <ul class="ticks"><li><span data-l="fr">La leçon du jour et ses exercices</span><span data-l="en">Today's lesson and its exercises</span></li><li><span data-l="fr">3 minutes de conversation par jour</span><span data-l="en">3 minutes of conversation a day</span></li><li><span data-l="fr">Carnet de mots, série et rappels</span><span data-l="en">Word notebook, streak and reminders</span></li></ul>
+      </article>
+      <article class="plan star">
+        <h3><span data-l="fr">Premium</span><span data-l="en">Premium</span></h3><p class="muted"><span data-l="fr">Pour pratiquer tous les jours</span><span data-l="en">To practise every day</span></p>
+        <ul class="ticks"><li><span data-l="fr">Toutes les leçons et l'actualité</span><span data-l="en">All lessons and the news</span></li><li><span data-l="fr">20 minutes de conversation par jour</span><span data-l="en">20 minutes of conversation a day</span></li><li><span data-l="fr">Voix naturelles des personnages</span><span data-l="en">Natural character voices</span></li></ul>
+      </article>
+      <article class="plan">
+        <h3><span data-l="fr">Expert</span><span data-l="en">Expert</span></h3><p class="muted"><span data-l="fr">Pour devenir vraiment fluide</span><span data-l="en">To become truly fluent</span></p>
+        <ul class="ticks"><li><span data-l="fr">Tout Premium</span><span data-l="en">Everything in Premium</span></li><li><span data-l="fr">60 minutes de conversation par jour</span><span data-l="en">60 minutes of conversation a day</span></li><li><span data-l="fr">Plus de voix naturelles</span><span data-l="en">More natural voices</span></li></ul>
+      </article>
     </div>
+    <p class="muted small"><span data-l="fr">Abonnements mensuels ou annuels, avec essai gratuit, résiliables à tout moment depuis le store ou l'app. Prix affichés dans l'app.</span><span data-l="en">Monthly or yearly subscriptions, with a free trial, cancel anytime from the store or the app. Prices shown in the app.</span></p>
   </div>
 </section>
 
 <section id="contact" aria-labelledby="h-contact">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Contact</div>
-      <h2 id="h-contact"><span data-l="fr">Écrivez-nous</span><span data-l="en">Get in touch</span></h2>
-      <p class="muted"><span data-l="fr">Une question sur nos activités, un partenariat ou l'application NOE : nous répondons sous deux jours ouvrés.</span><span data-l="en">A question about our activities, a partnership or the NOE app: we reply within two business days.</span></p>
+      <p class="eyebrow"><span data-l="fr">Contact et assistance</span><span data-l="en">Contact and support</span></p>
+      <h2 id="h-contact"><span data-l="fr">Une question ? On te répond.</span><span data-l="en">A question? We'll answer.</span></h2>
     </div>
     <div class="contact">
-      <div class="card"><h3><span data-l="fr">Par e-mail</span><span data-l="en">By email</span></h3><p class="big"><a href="mailto:bramigab@gmail.com">bramigab@gmail.com</a></p></div>
-      <div class="card"><h3><span data-l="fr">Par courrier</span><span data-l="en">By post</span></h3><address class="big">GBH<br>23 rue d'Anjou<br>75008 Paris<br>France</address></div>
+      <div class="card"><h3><span data-l="fr">Écris-nous</span><span data-l="en">Email us</span></h3><p class="big"><a href="mailto:bramigab@gmail.com">bramigab@gmail.com</a></p><p class="muted"><span data-l="fr">Réponse sous deux jours ouvrés.</span><span data-l="en">We reply within two business days.</span></p></div>
+      <div class="card"><h3><span data-l="fr">Aide en ligne</span><span data-l="en">Online help</span></h3><p><span data-l="fr">Compte, abonnement, micro, rappels, suppression du compte : les réponses aux questions fréquentes.</span><span data-l="en">Account, subscription, microphone, reminders, account deletion: answers to common questions.</span></p>
+        <p><a class="btn" href="https://gab728.github.io/italiano-passo-passo/aide.html"><span data-l="fr">Voir l'aide</span><span data-l="en">Open help</span></a></p></div>
+      <div class="card"><h3><span data-l="fr">Éditeur</span><span data-l="en">Publisher</span></h3><address>GBH (SAS)<br>23 rue d'Anjou<br>75008 Paris, France<br>RCS Paris 934 041 229</address></div>
     </div>
   </div>
 </section>
@@ -142,18 +179,21 @@
 </main>
 <footer class="foot">
   <div class="wrap">
-    <div>© 2026 GBH · SAS · RCS Paris 934 041 229</div>
-    <nav aria-label="Liens légaux">
-      <a href="mentions-legales.html"><span data-l="fr">Mentions légales</span><span data-l="en">Legal notice</span></a>
-      <a href="confidentialite.html"><span data-l="fr">Confidentialité</span><span data-l="en">Privacy</span></a>
-      <a href="./#contact">Contact</a>
-    </nav>
+    <p class="editor"><span data-l="fr">NOE est une application éditée par <b>GBH</b>, société par actions simplifiée au capital de 1 000 €, 23 rue d'Anjou, 75008 Paris, France — RCS Paris 934 041 229.</span><span data-l="en">NOE is an app published by <b>GBH</b>, a French simplified joint-stock company (SAS) with a share capital of €1,000, 23 rue d'Anjou, 75008 Paris, France — Paris trade register 934 041 229.</span></p>
+    <div class="foot-row">
+      <div>© 2026 GBH</div>
+      <nav aria-label="Liens">
+        <a href="https://gab728.github.io/italiano-passo-passo/aide.html"><span data-l="fr">Aide et assistance</span><span data-l="en">Help and support</span></a>
+        <a href="confidentialite.html"><span data-l="fr">Confidentialité</span><span data-l="en">Privacy</span></a>
+        <a href="mentions-legales.html"><span data-l="fr">Mentions légales</span><span data-l="en">Legal notice</span></a>
+        <a href="./#contact">Contact</a>
+      </nav>
+    </div>
   </div>
 </footer>
 <script>
 (function () {
-  var b = document.getElementById("lang");
-  b.onclick = function () { var l = document.documentElement.lang === "fr" ? "en" : "fr"; document.documentElement.lang = l; try { localStorage.setItem("gbh-lang", l); } catch (e) {} };
+  document.getElementById("lang").onclick = function () { var l = document.documentElement.lang === "fr" ? "en" : "fr"; document.documentElement.lang = l; try { localStorage.setItem("noe-lang", l); } catch (e) {} };
   var top = document.getElementById("top"), on = function () { top.classList.toggle("scrolled", window.scrollY > 4); };
   window.addEventListener("scroll", on, { passive: true }); on();
 })();
