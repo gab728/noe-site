@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gab728.github.io/gbh-site/sitemap.xml
