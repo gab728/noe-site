@@ -4,15 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mentions légales — NOE</title>
-<meta name="description" content="Mentions légales du site et de l'application NOE, éditée par GBH.">
+<meta name="description" content="Mentions légales de NOE, application éditée par GBH (SAS, RCS Paris 934 041 229).">
 <link rel="canonical" href="https://noelang.app/mentions-legales.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NOE">
 <meta property="og:title" content="Mentions légales — NOE">
-<meta property="og:description" content="Mentions légales du site et de l'application NOE, éditée par GBH.">
+<meta property="og:description" content="Mentions légales de NOE, application éditée par GBH (SAS, RCS Paris 934 041 229).">
 <meta property="og:url" content="https://noelang.app/mentions-legales.html">
 <meta property="og:image" content="https://noelang.app/assets/noe-256.png">
-<meta name="theme-color" content="#F4F6FA" media="(prefers-color-scheme: light)">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#EAF3FF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0E1016" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="assets/noe-64.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/noe-180.png">
@@ -20,77 +21,70 @@
 <link rel="stylesheet" href="style.css">
 
 <script>
-(function () { var l = ""; try { l = localStorage.getItem("noe-lang") || ""; } catch (e) {} if (!l) l = /^fr/i.test(navigator.language || "fr") ? "fr" : "en"; document.documentElement.lang = l; })();
+/* Langue : #en ou #es dans l'adresse, sinon le dernier choix, sinon celle du navigateur (français par défaut). */
+(function () { var d = document.documentElement, h = (location.hash.match(/^#(fr|en|es)$/) || [])[1], l = h || ""; try { l = l || localStorage.getItem("noe-lang") || ""; } catch (e) {}
+  if (!l) { var n = (navigator.language || "fr").slice(0, 2).toLowerCase(); l = n === "fr" || n === "es" ? n : "en"; } d.lang = l; d.className = "js"; })();
 </script>
 </head>
 <body>
-<a class="skip" href="#main"><span data-l="fr">Aller au contenu</span><span data-l="en">Skip to content</span></a>
+<a class="skip" href="#main"><span data-l="fr">Aller au contenu</span><span data-l="en">Skip to content</span><span data-l="es">Ir al contenido</span></a>
 <header class="top" id="top">
   <div class="wrap">
     <a class="logo" href="./" aria-label="NOE"><img src="assets/noe-64.png" width="34" height="34" alt="">NOE</a>
     <nav class="nav" aria-label="Navigation">
-      <a class="opt" href="./#fonctionnalites"><span data-l="fr">L'app</span><span data-l="en">The app</span></a>
-      <a class="opt" href="./#formules"><span data-l="fr">Formules</span><span data-l="en">Plans</span></a>
-      <a class="opt" href="https://gab728.github.io/italiano-passo-passo/aide.html"><span data-l="fr">Aide</span><span data-l="en">Help</span></a>
-      <a href="./#contact">Contact</a>
-      <button class="lang" type="button" id="lang" aria-label="Changer de langue / Change language"><span data-l="fr">EN</span><span data-l="en">FR</span></button>
+      <a class="opt" href="./#comment"><span data-l="fr">Comment ça marche</span><span data-l="en">How it works</span><span data-l="es">Cómo funciona</span></a>
+      <a class="opt" href="./#formules"><span data-l="fr">Formules</span><span data-l="en">Plans</span><span data-l="es">Planes</span></a>
+      <a class="opt" href="aide.html"><span data-l="fr">Aide</span><span data-l="en">Help</span><span data-l="es">Ayuda</span></a>
     </nav>
+    <div class="langs-switch" role="group" aria-label="Langue · Language · Idioma">
+      <button type="button" data-set="fr" lang="fr">FR</button><button type="button" data-set="en" lang="en">EN</button><button type="button" data-set="es" lang="es">ES</button>
+    </div>
+    <a class="btn primary sm try" href="https://gab728.github.io/italiano-passo-passo/"><span data-l="fr">Essayer</span><span data-l="en">Try it</span><span data-l="es">Probar</span></a>
   </div>
 </header>
 <main id="main">
 <article class="doc"><div class="wrap">
-<p class="eyebrow"><span data-l="fr">Mise à jour : 20 novembre 2026</span><span data-l="en">Last updated: November 20, 2026</span></p>
-
-  <h1><span data-l="fr">Mentions légales</span><span data-l="en">Legal notice</span></h1>
-  <p class="lead"><span data-l="fr">NOE est une application éditée par <b>GBH</b>, société par actions simplifiée au capital de 1 000 €, 23 rue d'Anjou, 75008 Paris, France — RCS Paris 934 041 229.</span><span data-l="en">NOE is an app published by <b>GBH</b>, a French simplified joint-stock company (SAS) with a share capital of €1,000, 23 rue d'Anjou, 75008 Paris, France — Paris trade register 934 041 229.</span></p>
-  <h2><span data-l="fr">Éditeur</span><span data-l="en">Publisher</span></h2>
-  <dl class="facts" data-l="fr">
-  <div><dt>Dénomination</dt><dd>GBH</dd></div>
-  <div><dt>Forme</dt><dd>Société par actions simplifiée (SAS)</dd></div>
-  <div><dt>Capital social</dt><dd>1 000 €</dd></div>
-  <div><dt>Siège social</dt><dd>23 rue d'Anjou, 75008 Paris, France</dd></div>
-  <div><dt>Immatriculation</dt><dd>934 041 229 R.C.S. Paris</dd></div>
-  <div><dt>SIRET</dt><dd>934 041 229 00014</dd></div>
-  <div><dt>N° de TVA</dt><dd>FR18934041229</dd></div>
-  <div><dt>Directeur de la publication</dt><dd>Gabriel Brami, président</dd></div>
-  <div><dt>Contact</dt><dd><a href="mailto:contact@noelang.app">contact@noelang.app</a></dd></div></dl>
-  <dl class="facts" data-l="en">
-  <div><dt>Legal name</dt><dd>GBH</dd></div>
-  <div><dt>Legal form</dt><dd>French simplified joint-stock company (SAS)</dd></div>
-  <div><dt>Share capital</dt><dd>€1,000</dd></div>
-  <div><dt>Registered office</dt><dd>23 rue d'Anjou, 75008 Paris, France</dd></div>
-  <div><dt>Registration</dt><dd>934 041 229 R.C.S. Paris</dd></div>
-  <div><dt>SIRET</dt><dd>934 041 229 00014</dd></div>
-  <div><dt>VAT number</dt><dd>FR18934041229</dd></div>
-  <div><dt>Publication director</dt><dd>Gabriel Brami, President</dd></div>
-  <div><dt>Contact</dt><dd><a href="mailto:contact@noelang.app">contact@noelang.app</a></dd></div></dl>
-  <h2><span data-l="fr">Hébergement</span><span data-l="en">Hosting</span></h2>
-  <p><span data-l="fr">Site : </span><span data-l="en">Website: </span>GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, <span data-l="fr">États-Unis</span><span data-l="en">United States</span>.</p>
-  <h2><span data-l="fr">Propriété intellectuelle</span><span data-l="en">Intellectual property</span></h2>
-  <p><span data-l="fr">Le nom NOE, la mascotte Lino, les textes, les leçons et les visuels appartiennent à GBH. Toute reproduction sans autorisation écrite est interdite. La police Nunito est utilisée sous licence SIL Open Font License.</span><span data-l="en">The NOE name, the Lino mascot, texts, lessons and visuals belong to GBH. Any reproduction without written permission is prohibited. The Nunito typeface is used under the SIL Open Font License.</span></p>
-  <h2><span data-l="fr">Application</span><span data-l="en">App</span></h2>
-  <p><span data-l="fr">Les données traitées par l'application sont décrites dans sa <a href="https://gab728.github.io/italiano-passo-passo/confidentialite.html">politique de confidentialité</a>. L'assistance est sur la <a href="https://gab728.github.io/italiano-passo-passo/aide.html">page d'aide</a>.</span><span data-l="en">Data processed by the app is described in its <a href="https://gab728.github.io/italiano-passo-passo/confidentialite.html">privacy policy</a>. Support is available on the <a href="https://gab728.github.io/italiano-passo-passo/aide.html">help page</a>.</span></p>
+<div data-l="fr" lang="fr"><p class="eyebrow">NOE · GBH</p><h1>Mentions légales</h1><p class="lead">NOE est une application éditée par <b>GBH</b>, société par actions simplifiée au capital de 1 000 €, 23 rue d'Anjou, 75008 Paris, France — RCS Paris 934 041 229.</p><h2>Éditeur</h2><dl class="facts">
+  <div><dt>Dénomination</dt><dd>GBH</dd></div><div><dt>Forme</dt><dd>Société par actions simplifiée (SAS)</dd></div><div><dt>Capital social</dt><dd>1 000 €</dd></div>
+  <div><dt>Siège social</dt><dd>23 rue d'Anjou, 75008 Paris, France</dd></div><div><dt>Immatriculation</dt><dd>934 041 229 R.C.S. Paris · SIRET 934 041 229 00014</dd></div>
+  <div><dt>N° de TVA</dt><dd>FR18934041229</dd></div><div><dt>Directeur de la publication</dt><dd>Gabriel Brami, président</dd></div><div><dt>Contact</dt><dd><a href="mailto:contact@noelang.app">contact@noelang.app</a></dd></div></dl><h2>Hébergement</h2><p>GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p><h2>Propriété intellectuelle</h2><p>Le nom NOE, la mascotte Lino, les textes, les leçons et les visuels appartiennent à GBH. Toute reproduction sans autorisation écrite est interdite. La police Nunito est utilisée sous licence SIL Open Font License.</p></div>
+<div data-l="en" lang="en"><p class="eyebrow">NOE · GBH</p><h1>Legal notice</h1><p class="lead">NOE is an app published by <b>GBH</b>, a French simplified joint-stock company (SAS) with a share capital of €1,000, 23 rue d'Anjou, 75008 Paris, France — Paris trade register 934 041 229.</p><h2>Publisher</h2><dl class="facts">
+  <div><dt>Legal name</dt><dd>GBH</dd></div><div><dt>Legal form</dt><dd>French simplified joint-stock company (SAS)</dd></div><div><dt>Share capital</dt><dd>€1,000</dd></div>
+  <div><dt>Registered office</dt><dd>23 rue d'Anjou, 75008 Paris, France</dd></div><div><dt>Registration</dt><dd>934 041 229 R.C.S. Paris · SIRET 934 041 229 00014</dd></div>
+  <div><dt>VAT number</dt><dd>FR18934041229</dd></div><div><dt>Publication director</dt><dd>Gabriel Brami, President</dd></div><div><dt>Contact</dt><dd><a href="mailto:contact@noelang.app">contact@noelang.app</a></dd></div></dl><h2>Hosting</h2><p>GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States.</p><h2>Intellectual property</h2><p>The NOE name, the Lino mascot, texts, lessons and visuals belong to GBH. Any reproduction without written permission is prohibited. The Nunito typeface is used under the SIL Open Font License.</p></div>
+<div data-l="es" lang="es"><p class="eyebrow">NOE · GBH</p><h1>Aviso legal</h1><p class="lead">NOE es una aplicación editada por <b>GBH</b>, sociedad por acciones simplificada francesa con un capital de 1.000 €, 23 rue d'Anjou, 75008 Paris, Francia — Registro Mercantil de París 934 041 229.</p><h2>Editor</h2><dl class="facts">
+  <div><dt>Denominación</dt><dd>GBH</dd></div><div><dt>Forma jurídica</dt><dd>Sociedad por acciones simplificada (SAS) francesa</dd></div><div><dt>Capital social</dt><dd>1.000 €</dd></div>
+  <div><dt>Domicilio social</dt><dd>23 rue d'Anjou, 75008 Paris, Francia</dd></div><div><dt>Registro</dt><dd>934 041 229 R.C.S. Paris · SIRET 934 041 229 00014</dd></div>
+  <div><dt>N.º de IVA</dt><dd>FR18934041229</dd></div><div><dt>Director de la publicación</dt><dd>Gabriel Brami, presidente</dd></div><div><dt>Contact</dt><dd><a href="mailto:contact@noelang.app">contact@noelang.app</a></dd></div></dl><h2>Alojamiento</h2><p>GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, Estados Unidos.</p><h2>Propiedad intelectual</h2><p>El nombre NOE, la mascota Lino, los textos, las lecciones y los elementos visuales pertenecen a GBH. Queda prohibida cualquier reproducción sin autorización escrita. La fuente Nunito se usa bajo la licencia SIL Open Font License.</p></div>
 </div></article>
 </main>
 <footer class="foot">
   <div class="wrap">
-    <p class="editor"><span data-l="fr">NOE est une application éditée par <b>GBH</b>, société par actions simplifiée au capital de 1 000 €, 23 rue d'Anjou, 75008 Paris, France — RCS Paris 934 041 229.</span><span data-l="en">NOE is an app published by <b>GBH</b>, a French simplified joint-stock company (SAS) with a share capital of €1,000, 23 rue d'Anjou, 75008 Paris, France — Paris trade register 934 041 229.</span></p>
+    <div class="foot-brand"><img src="assets/noe-64.png" width="40" height="40" alt=""><div><b>NOE</b><br><span data-l="fr">Apprends une langue en parlant.</span><span data-l="en">Learn a language by speaking.</span><span data-l="es">Aprende un idioma hablando.</span></div></div>
+    <p class="editor"><span data-l="fr">NOE est une application éditée par <b>GBH</b>, société par actions simplifiée au capital de 1 000 €, 23 rue d'Anjou, 75008 Paris, France — RCS Paris 934 041 229.</span><span data-l="en">NOE is an app published by <b>GBH</b>, a French simplified joint-stock company (SAS) with a share capital of €1,000, 23 rue d'Anjou, 75008 Paris, France — Paris trade register 934 041 229.</span><span data-l="es">NOE es una aplicación editada por <b>GBH</b>, sociedad por acciones simplificada francesa con un capital de 1.000 €, 23 rue d'Anjou, 75008 Paris, Francia — Registro Mercantil de París 934 041 229.</span></p>
     <div class="foot-row">
-      <div>© 2026 GBH</div>
+      <div>© 2026 GBH · <a href="mailto:contact@noelang.app">contact@noelang.app</a></div>
       <nav aria-label="Liens">
-        <a href="https://gab728.github.io/italiano-passo-passo/aide.html"><span data-l="fr">Aide et assistance</span><span data-l="en">Help and support</span></a>
-        <a href="confidentialite.html"><span data-l="fr">Confidentialité</span><span data-l="en">Privacy</span></a>
-        <a href="mentions-legales.html"><span data-l="fr">Mentions légales</span><span data-l="en">Legal notice</span></a>
-        <a href="./#contact">Contact</a>
+        <a href="aide.html"><span data-l="fr">Aide et assistance</span><span data-l="en">Help and support</span><span data-l="es">Ayuda y soporte</span></a>
+        <a href="confidentialite.html"><span data-l="fr">Confidentialité</span><span data-l="en">Privacy</span><span data-l="es">Privacidad</span></a>
+        <a href="mentions-legales.html"><span data-l="fr">Mentions légales</span><span data-l="en">Legal notice</span><span data-l="es">Aviso legal</span></a>
       </nav>
     </div>
   </div>
 </footer>
 <script>
 (function () {
-  document.getElementById("lang").onclick = function () { var l = document.documentElement.lang === "fr" ? "en" : "fr"; document.documentElement.lang = l; try { localStorage.setItem("noe-lang", l); } catch (e) {} };
+  var d = document.documentElement, bs = document.querySelectorAll("[data-set]");
+  function mark() { for (var i = 0; i < bs.length; i++) bs[i].setAttribute("aria-pressed", bs[i].getAttribute("data-set") === d.lang ? "true" : "false"); }
+  for (var i = 0; i < bs.length; i++) bs[i].onclick = function () { d.lang = this.getAttribute("data-set"); try { localStorage.setItem("noe-lang", d.lang); } catch (e) {} mark(); };
+  mark();
   var top = document.getElementById("top"), on = function () { top.classList.toggle("scrolled", window.scrollY > 4); };
   window.addEventListener("scroll", on, { passive: true }); on();
+  /* Apparition au défilement (le contenu reste visible sans JavaScript ou si l'observateur manque). */
+  var els = document.querySelectorAll("[data-r]");
+  if (!("IntersectionObserver" in window)) { for (var j = 0; j < els.length; j++) els[j].classList.add("in"); return; }
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+  for (var k = 0; k < els.length; k++) io.observe(els[k]);
 })();
 </script>
 </body>
